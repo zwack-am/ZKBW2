@@ -13,7 +13,7 @@ If you have a code enhancement and are willing to put it into the Public Domain 
 
 While the development has switched to [platformio](https://platformio.org/) it shouldn't be too hard to use.  If you install platformio on your system you can either use the platformio core to compile and upload this `pio run -t upload` or whichever IDE you are used to using. I am using CodeBlocks, but you can use whatever you like.
 
-Releases are also relased as UF2 files.  If you are using a UF2 bootloader (the Tirinket m0 has one for example) then you can just press the reset button twice and wait for the green light.  At that point your computer will have a drive called TRINKET_BOOT and you can simply drop the trinket.uf2 file onto that drive, when it is finished copying the trinket will reset and will be running that program.
+Releases are also released as UF2 files.  If you are using a UF2 bootloader (the Tirinket m0 has one for example) then you can just press the reset button twice and wait for the green light.  At that point your computer will have a drive called TRINKET_BOOT and you can simply drop the trinket.uf2 file onto that drive, when it is finished copying the trinket will reset and will be running that program.
 
 The releases use the standard config.h as included in the source code.
 
