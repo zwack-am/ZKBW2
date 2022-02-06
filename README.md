@@ -15,6 +15,8 @@ While the development has switched to [platformio](https://platformio.org/) it s
 
 Releases are also released as UF2 files.  If you are using a UF2 bootloader (the Tirinket m0 has one for example) then you can just press the reset button twice and wait for the green light.  At that point your computer will have a drive called TRINKET_BOOT and you can simply drop the trinket.uf2 file onto that drive, when it is finished copying the trinket will reset and will be running that program.
 
+Releases are created using `uf2conv.py .pio/build/adafruit_trinket_m0/firmware.bin --family 0x68ed2b88 --convert --output ZKBW2_trinket_m0.uf2 --base 0x2000`
+
 The releases use the standard config.h as included in the source code.
 
 If you wish to use a custom configuration then I am afraid you will have to build the code for yourself.
