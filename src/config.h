@@ -20,6 +20,13 @@ char * UIDPassword[][2] = {
 
 
 
+// Create the encrypted UIDPassword Array
+// Encrypted password array
+char * encryptedPassword[] = {
+  "\x84\xfd\xf5\xb8\x8e\xcc\xcd\x9c\xa9\xc2\xcc\x8b\xef",
+  NULL
+};
+
 // Set the header string
 char header[] = "ZPKW";
 

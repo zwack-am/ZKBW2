@@ -3,6 +3,8 @@
 
 
 #include <cstddef>
+#include <MFRC522.h>
+#include <require_cpp11.h>
 
 /*
  * ---------------------------------------------------------------------------------------------------------------
@@ -47,5 +49,10 @@ unsigned long previousTime = 0L;
 #define DATAPIN   7
 #define CLOCKPIN  8
 #define LED_PIN   13
+
+int getUIDPassword(MFRC522::Uid uid);
+int getEncryptedPassword(MFRC522::Uid uid);
+int getPassword(uint8_t blocks, uint8_t blockLength);
+int getUID(MFRC522::Uid uid);
 
 #endif // ZBKW2_H_INCLUDED
